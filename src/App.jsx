@@ -57,22 +57,25 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="mt-16">
-        <div className="text-center">
-          <span className="text-sky-700">✨ Worlds first AI recruiter</span>
-          <br />
-          <br />
-          <span className="text-7xl font-bold text-gray-800">Close your hiring</span>
-          <br />
-          <span className="text-7xl font-bold text-gray-800 mt-4">
-            in less than <span className="text-sky-600">24 Hours</span>
-          </span>
-        </div>
-        <div className="text-center mt-8">
-          <p className="text-gray-600 text-sm">
-            An AI-powered recruiting platform that sources, shortlists, interviews, brand evaluates potential <br />candidates specific to your hiring needs - in just a day!
-          </p>
-        </div>
+      <div className="mt-16 px-4">
+  <div className="text-center">
+    <span className="text-sky-700 text-xl sm:text-2xl md:text-3xl lg:text-4xl">✨ World's First AI Recruiter</span>
+    <br />
+    <br />
+    <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-800">Close Your Hiring</span>
+    <br />
+    <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-800 mt-4">
+      in less than <span className="text-sky-600">24 Hours</span>
+    </span>
+  </div>
+  <div className="text-center mt-8">
+    <p className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg">
+      An AI-powered recruiting platform that sources, shortlists, interviews, and brand evaluates potential
+      <br />
+      candidates specific to your hiring needs - in just a day!
+    </p>
+  </div>
+    
         <div className="flex justify-center items-center mt-12">
           <div className="bg-white shadow-sm rounded-lg p-2 flex items-center border border-gray-200">
             <div className="relative" ref={countryCodeRef}>
@@ -109,7 +112,7 @@ function App() {
         </div>
 
         <div className="flex justify-center mt-96 ">
-          <div className="relative bg-slate-100 rounded-xl w-11/12 max-w-6xl h-96 px-4 pt-32 pb-8">
+          <div className="relative bg-gray-100 rounded-xl w-11/12 max-w-6xl h-96 px-4 pt-32 pb-8">
             <video 
               className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2/3 w-full max-w-4xl rounded-3xl z-10"
               controls
@@ -151,69 +154,69 @@ function App() {
 
       <AIRecruitmentTools />
 
-      <div className="bg-gray-100 p-8 rounded-lg max-w-7xl mx-auto ">
-        <div className="flex flex-column md:flex-row justify-between items-start md:items-center mb-6 space-y-6 md:space-y-0">
-          {/* Left Side: Contact Form */}
-          <div className="p-6 w-full md:w-1/2">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-center md:text-left">
-              Find your next hire today.
-            </h1>
-            <div className="flex items-center mb-4">
-              <div className="relative" ref={countryCodeRef}>
-                <button
-                  onClick={toggleCountryCode}
-                  className="flex items-center px-4 py-2 text-gray-700 focus:outline-none">
-                  {selectedCountryCode}
-                </button>
-                {isCountryCodeOpen && (
-                  <div className="absolute bg-white">
-                    <div className="py-1">
-                      {countryCodes.map(({ label }) => (
-                        <button
-                          key={label}
-                          onClick={() => handleCountryCodeSelect(label)}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
-                        >
-                          {label}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-              <input
-                type="text"
-                placeholder="Enter your contact number"
-                className="px-4 py-5 focus:outline-none min-w-96"
-              />
-              <button className="bg-sky-700 text-white font-bold py-2 px-6 ml-4">
-                Start Hiring
-              </button>
-            </div>
-          </div>
-          {/* Right Side: Statistics */}
-          <div className="w-full md:w-1/2 ml-36">
-            <div className="grid grid-cols-2 gap-6">
-              <div>
-                <p className="text-5xl font-bold text-sky-700 text-center">30%</p>
-                <p className="text-sm text-gray-600 mt-4">Increase in candidate applications per job</p>
-              </div>
-              <div>
-                <p className="text-5xl font-bold text-sky-700 text-center">5 hrs+</p>
-                <p className="text-sm text-gray-600 mt-4">Time saved per day per recruiter</p>
-              </div>
-              <div>
-                <p className="text-5xl font-bold text-sky-700 text-center">10X</p>
-                <p className="text-sm text-gray-600 mt-4">Improved candidate quality per job</p>
-              </div>
-              <div>
-                <p className="text-5xl font-bold text-sky-700 text-center">1/10th</p>
-                <p className="text-sm text-gray-600 mt-4">The cost per job per recruiter</p>
+      <div className="bg-gray-100 p-8 rounded-lg max-w-7xl mx-auto">
+  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 space-y-6 md:space-y-0">
+    {/* Left Side: Contact Form */}
+    <div className="p-6 w-full md:w-1/2">
+      <h1 className="text-5xl md:text-7xl font-bold mb-6 text-center md:text-left">
+        Find your next hire today.
+      </h1>
+      <div className="flex items-center mb-4">
+        <div className="relative" ref={countryCodeRef}>
+          <button
+            onClick={toggleCountryCode}
+            className="flex items-center px-4 py-2 text-gray-700 focus:outline-none">
+            {selectedCountryCode}
+          </button>
+          {isCountryCodeOpen && (
+            <div className="absolute bg-white border border-gray-200 mt-1 w-full z-10">
+              <div className="py-1">
+                {countryCodes.map(({ label }) => (
+                  <button
+                    key={label}
+                    onClick={() => handleCountryCodeSelect(label)}
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+                  >
+                    {label}
+                  </button>
+                ))}
               </div>
             </div>
-          </div>
+          )}
+        </div>
+        <input
+          type="text"
+          placeholder="Enter your contact number"
+          className="px-4 py-5 focus:outline-none min-w-96"
+        />
+        <button className="bg-sky-700 text-white font-bold py-2 px-6 ml-4">
+          Start Hiring
+        </button>
+      </div>
+    </div>
+    {/* Right Side: Statistics */}
+    <div className="w-full md:w-1/2 md:ml-36 mt-6 md:mt-0">
+      <div className="grid grid-cols-2 gap-6 md:grid-cols-2">
+        <div>
+          <p className="text-5xl font-bold text-sky-700 text-center">30%</p>
+          <p className="text-sm text-gray-600 mt-4 text-center">Increase in candidate applications per job</p>
+        </div>
+        <div>
+          <p className="text-5xl font-bold text-sky-700 text-center">5 hrs+</p>
+          <p className="text-sm text-gray-600 mt-4 text-center">Time saved per day per recruiter</p>
+        </div>
+        <div>
+          <p className="text-5xl font-bold text-sky-700 text-center">10X</p>
+          <p className="text-sm text-gray-600 mt-4 text-center">Improved candidate quality per job</p>
+        </div>
+        <div>
+          <p className="text-5xl font-bold text-sky-700 text-center">1/10th</p>
+          <p className="text-sm text-gray-600 mt-4 text-center">The cost per job per recruiter</p>
         </div>
       </div>
+    </div>
+  </div>
+</div>
 
       <div className="relative">
         <div className="sticky top-0 h-96 mb-0 pb-0 flex flex-col md:flex-row-reverse items-center justify-normal mt-36">
