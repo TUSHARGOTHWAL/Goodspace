@@ -102,25 +102,25 @@ function App() {
           <Marquee speed={50} pauseOnClick>
             <div className="flex flex-wrap gap-20 mt-20">
               <a href="https://www.hdfcbank.com/">
-                <img src="public/google-cloud.svg" alt="HDFC Bank" className="h-20" />
+                <img src={"public/google-cloud.svg" }alt="HDFC Bank" className="h-20" />
               </a>
               <a href="https://www.genpact.com/">
-                <img src="public/mastercard.svg" alt="Genpact" className="h-20" />
+                <img src={"public/mastercard.svg"} alt="Genpact" className="h-20" />
               </a>
               <a href="https://www2.deloitte.com/us/en.html">
                 <img src="public/react.svg" alt="Deloitte" className="h-20" />
               </a>
               <a href="https://www.cognizant.com/">
-                <img src="public/bitcoin.svg" alt="Cognizant" className="h-20" />
+                <img src={"public/bitcoin.svg"} alt="Cognizant" className="h-20" />
               </a>
               <a href="https://paytm.com/">
-                <img src="public/Polygon.png" alt="Paytm" className="h-20" />
+                <img src={"public/Polygon.png"} alt="Paytm" className="h-20" />
               </a>
               <a href="https://www.mobikwik.com/">
-                <img src="public/apple.svg" alt="Mobikwik" className="h-20" />
+                <img src={"public/apple.svg"} alt="Mobikwik" className="h-20" />
               </a>
               <a href="https://www.zoho.com/">
-                <img src="public/Solana.png" alt="Zoho" className="h-20" />
+                <img src={"public/Solana.png"} alt="Zoho" className="h-20" />
               </a>
             </div>
           </Marquee>
