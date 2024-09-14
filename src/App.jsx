@@ -6,7 +6,8 @@ import AIRecruitmentTools from './components/AIRecruitmentTools';
 import Faqs from './components/Faqs';
 import ContactForm from './components/ContactForm';
 
-// Importing Images
+// Importing Images because it was not showing normally after deploying so have to import it
+
 import googleCloud from '/public/google-cloud.svg';
 import mastercard from '/public/mastercard.svg';
 import reactLogo from '/public/react.svg';
@@ -14,10 +15,15 @@ import bitcoin from '/public/bitcoin.svg';
 import polygon from '/public/Polygon.png';
 import apple from '/public/apple.svg';
 import solana from '/public/Solana.png';
-import jobseeker from '/public/jobseeker-14460b31.png';
 import downloadQR from '/public/download.png';
 import downloadHand from '/public/downloadhand-78c6f78a.png';
 import demoVideo from '/public/GoodSpace Demo Video.mp4';
+import postajob from '/public/postajob-911f0b67.png';
+import jobseeker from '/public/jobseeker-14460b31.png';
+import interview from '/public/interview-d4b2b690.png'
+import yourhires from '/public/yourhires-3c205e8d.png';
+import playstore from '/public/playstore.png';
+import appstore from '/public/appstore.png';
 
 const countryCodes = [
   { code: 'IN', dialCode: '+91', label: 'IN +91' },
@@ -53,21 +59,22 @@ function App() {
       <Navbar />
       <div className="mt-16">
         <div className="text-center">
-          <span className="text-blue-500">✨ Worlds first AI recruiter</span>
+          <span className="text-sky-700">✨ Worlds first AI recruiter</span>
+          <br />
           <br />
           <span className="text-7xl font-bold text-gray-800">Close your hiring</span>
           <br />
           <span className="text-7xl font-bold text-gray-800 mt-4">
-            in less than <span className="text-blue-500">24 Hours</span>
+            in less than <span className="text-sky-600">24 Hours</span>
           </span>
         </div>
         <div className="text-center mt-8">
-          <p className="text-gray-600 text-lg">
-            An AI-powered recruiting platform that sources, shortlists, interviews, and evaluates potential candidates specific to your hiring needs - in just a day!
+          <p className="text-gray-600 text-sm">
+            An AI-powered recruiting platform that sources, shortlists, interviews, brand evaluates potential <br />candidates specific to your hiring needs - in just a day!
           </p>
         </div>
-        <div className="flex justify-center items-center mt-12 ">
-          <div className="bg-white shadow-md rounded-lg p-4 flex items-center">
+        <div className="flex justify-center items-center mt-12">
+          <div className="bg-white shadow-sm rounded-lg p-2 flex items-center border border-gray-200">
             <div className="relative" ref={countryCodeRef}>
               <button
                 onClick={toggleCountryCode}
@@ -96,7 +103,7 @@ function App() {
               className="px-4 py-2 focus:outline-none"
             />
           </div>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg ml-4">
+          <button className="bg-sky-600 hover:bg-blue-600 text-white font-bold py-4 px-6 rounded-md ml-4">
             Start Hiring
           </button>
         </div>
@@ -211,7 +218,7 @@ function App() {
       <div className="relative">
         <div className="sticky top-0 h-96 mb-0 pb-0 flex flex-col md:flex-row-reverse items-center justify-normal mt-36">
           <div className="w-full md:w-1/2 flex justify-center">
-            <img src={jobseeker} alt="First Image" className="h-80 w-64 object-fit" />
+            <img src={postajob} alt="First Image" className="h-80 w-64 object-fit -mb-16" />
           </div>
           <div className="w-full md:w-1/2 flex flex-col items-start justify-center p-6 ml-36">
             <h2 className="text-5xl text-sky-700 font-bold">Post your job on GoodSpace in seconds</h2>
@@ -222,7 +229,7 @@ function App() {
 
         <div className="sticky top-0 h-96 mb-0 pb-0 flex flex-col md:flex-row items-center justify-normal bg-sky-700">
           <div className="w-full md:w-1/2 flex justify-center">
-            <img src={jobseeker} alt="Second Image" className="h-80 w-64 object-fit" />
+            <img src={jobseeker} alt="Second Image" className="h-80 w-64 object-fit -mb-16" />
           </div>
           <div className="w-full md:w-1/2 flex flex-col items-start justify-center p-6">
             <h2 className="text-5xl text-white font-bold">Get shortlisted candidates within a day</h2>
@@ -233,7 +240,7 @@ function App() {
 
         <div className="sticky top-0 h-96 mb-0 pb-0 flex flex-col md:flex-row-reverse items-center justify-normal mt-36 bg-white">
           <div className="w-full md:w-1/2 flex justify-center">
-            <img src={jobseeker} alt="First Image" className="h-80 w-64 object-fit" />
+            <img src={interview} alt="First Image" className="h-80 w-64 object-fit -mb-16" />
           </div>
           <div className="w-full md:w-1/2 flex flex-col items-start justify-center p-6 ml-36">
             <h2 className="text-5xl text-sky-700 font-bold">You are all set to find your next hire</h2>
@@ -244,7 +251,7 @@ function App() {
 
         <div className="sticky top-0 h-96 mb-0 pb-0 flex flex-col md:flex-row items-center justify-normal bg-sky-700">
           <div className="w-full md:w-1/2 flex justify-center">
-            <img src={jobseeker} alt="Second Image" className="h-80 w-64 object-fit" />
+            <img src={yourhires} alt="Second Image" className="h-80 w-64 object-fit -mb-16" />
           </div>
           <div className="w-full md:w-1/2 flex flex-col items-start justify-center p-6">
             <h2 className="text-5xl text-white font-bold">Get shortlisted candidates within a day</h2>
@@ -258,13 +265,13 @@ function App() {
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
           <div className="flex flex-col space-y-6 ml-24 mt-14">
             <h1 className="text-6xl font-bold text-gray-800">
-              Experience the <span className="text-blue-600">GoodSpace</span> app on mobile
+              Experience the <span className="text-sky-700">GoodSpace</span> app on mobile
             </h1>
             <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
               {/* Google Play Button */}
               <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                  src={playstore}
                   alt="Google Play Store"
                   className="w-40"
                 />
@@ -272,7 +279,7 @@ function App() {
               {/* App Store Button */}
               <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Download_on_the_App_Store_Badge.svg"
+                  src={appstore}
                   alt="App Store"
                   className="w-40"
                 />

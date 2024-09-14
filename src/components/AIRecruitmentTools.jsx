@@ -45,7 +45,7 @@ const AIRecruitmentTools = () => {
     <div className="max-w-6xl mx-auto p-4 mt-20 mb-36">
       <h1 className="text-4xl font-bold text-center mb-20">
         Why companies across India are choosing <br />
-        <span className="text-blue-500">GoodSpace</span>
+        <span className="text-sky-600">GoodSpace</span>
       </h1>
 
       <div className="flex justify-between mb-8 gap-2">
@@ -54,7 +54,7 @@ const AIRecruitmentTools = () => {
             key={tool.id}
             className={`px-4 py-2 font-medium ${
               selectedTool === tool.id
-                ? 'text-blue-500 border-b-2 border-blue-500'
+                ? 'text-sky-700 border-b-2 border-sky-700 hover:border-sky-700'
                 : 'text-gray-500'
             }`}
             onClick={() => setSelectedTool(tool.id)}
@@ -69,9 +69,9 @@ const AIRecruitmentTools = () => {
           {aiTools.map((tool) =>
             selectedTool === tool.id ? (
               <div key={tool.id}>
-                <h2 className="text-6xl font-bold text-blue-600 mb-4">{tool.title}</h2>
+                <h2 className="text-6xl font-bold text-sky-600 mb-4">{tool.title}</h2>
                 <p className="text-gray-700 mb-4">{tool.description}</p>
-                <button className="bg-blue-500 text-white px-6 py-2 rounded-md flex items-center">
+                <button className="bg-sky-600 text-white px-6 py-5 font-bold rounded-md flex items-center">
                   Start hiring
                   <ChevronRight className="ml-2" size={20} />
                 </button>
