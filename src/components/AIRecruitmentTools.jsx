@@ -6,25 +6,25 @@ const aiTools = [
     id: 'finder',
     title: 'AI Finder',
     description: 'AI Shortlister leverages advanced analytics to accurately evaluate candidates against 50+ parameters, ensuring only the most qualified applicants are prioritized for further consideration..',
-    image: 'src/assets/aifinder-a6d4c2e4.png', 
+    image: 'public/aifinder-a6d4c2e4.png', 
   },
   {
     id: 'shortlister',
     title: 'AI Shortlister',
     description: 'AI Shortlister leverages advanced analytics to accurately evaluate candidates against 50+ parameters, ensuring only the most qualified applicants are prioritized for further consideration.',
-    image: 'src/assets/aishortlister-95a8c22a.png',
+    image: 'public/aishortlister-95a8c22a.png',
   },
   {
     id: 'interviewer',
     title: 'AI Interviewer',
     description: 'AI Interviewer conducts live video interviews with shortlisted candidates, delving into their suitability, motivation, and enthusiasm for the position; identifying candidates who are not only qualified but genuinely interested in the role.',
-    image: 'src/assets/aiinterviewer-7de0e98a.png',
+    image: 'public/aiinterviewer-7de0e98a.png',
   },
   {
     id: 'evaluator',
     title: 'AI Evaluator',
     description: 'AI Evaluator integrates all feedback collected so far to evaluate them based on a thorough understanding of their capabilities and fit; streamlining hiring end-to-end and ensuring only the highest quality hires.',
-    image: 'src/assets/aievaluator-91b1e8c1.png',
+    image: 'public/aievaluator-91b1e8c1.png',
   },
 ];
 

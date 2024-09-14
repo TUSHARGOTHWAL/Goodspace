@@ -94,7 +94,7 @@ function App() {
           className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2/3 w-full max-w-4xl rounded-3xl z-10"
           controls
         >
-          <source src="src/assets/GoodSpace Demo Video.mp4" type="video/mp4" />
+          <source src="public/GoodSpace Demo Video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -102,25 +102,25 @@ function App() {
           <Marquee speed={50} pauseOnClick>
             <div className="flex flex-wrap gap-20 mt-20">
               <a href="https://www.hdfcbank.com/">
-                <img src="src/assets/google-cloud.svg" alt="HDFC Bank" className="h-20" />
+                <img src="public/google-cloud.svg" alt="HDFC Bank" className="h-20" />
               </a>
               <a href="https://www.genpact.com/">
-                <img src="src/assets/mastercard.svg" alt="Genpact" className="h-20" />
+                <img src="public/mastercard.svg" alt="Genpact" className="h-20" />
               </a>
               <a href="https://www2.deloitte.com/us/en.html">
-                <img src="src/assets/react.svg" alt="Deloitte" className="h-20" />
+                <img src="public/react.svg" alt="Deloitte" className="h-20" />
               </a>
               <a href="https://www.cognizant.com/">
-                <img src="src/assets/bitcoin.svg" alt="Cognizant" className="h-20" />
+                <img src="public/bitcoin.svg" alt="Cognizant" className="h-20" />
               </a>
               <a href="https://paytm.com/">
-                <img src="src/assets/Polygon.png" alt="Paytm" className="h-20" />
+                <img src="public/Polygon.png" alt="Paytm" className="h-20" />
               </a>
               <a href="https://www.mobikwik.com/">
-                <img src="src/assets/apple.svg" alt="Mobikwik" className="h-20" />
+                <img src="public/apple.svg" alt="Mobikwik" className="h-20" />
               </a>
               <a href="https://www.zoho.com/">
-                <img src="src/assets/Solana.png" alt="Zoho" className="h-20" />
+                <img src="public/Solana.png" alt="Zoho" className="h-20" />
               </a>
             </div>
           </Marquee>
@@ -202,7 +202,7 @@ function App() {
 <div class="relative">
     <div class="sticky top-0 h-96 mb-0 pb-0 flex flex-col md:flex-row-reverse items-center justify-normal mt-36">
     <div class="w-full md:w-1/2 flex justify-center">
-            <img src="src/assets/jobseeker-14460b31.png" alt="First Image" class="h-80 w-64 object-fit"/>
+            <img src="public/jobseeker-14460b31.png" alt="First Image" class="h-80 w-64 object-fit"/>
         </div>
         <div class="w-full md:w-1/2 flex flex-col items-start justify-center p-6 ml-36">
         <h2 class="text-5xl text-sky-700 font-bold">Post your job on GoodSpace
@@ -216,7 +216,7 @@ function App() {
         
 
         <div class="w-full md:w-1/2 flex justify-center">
-            <img src="src/assets/jobseeker-14460b31.png" alt="Second Image" class="h-80 w-64 object-fit"/>
+            <img src="public/jobseeker-14460b31.png" alt="Second Image" class="h-80 w-64 object-fit"/>
         </div>
         <div class="w-full md:w-1/2 flex flex-col items-start justify-center p-6 ">
             <h2 class="text-5xl text-white font-bold">Get shortlisted candidates
@@ -227,7 +227,7 @@ function App() {
     
     <div class="sticky top-0 h-96 mb-0 pb-0 flex flex-col md:flex-row-reverse items-center justify-normal mt-36 bg-white">
     <div class="w-full md:w-1/2 flex justify-center">
-            <img src="src/assets/jobseeker-14460b31.png" alt="First Image" class="h-80 w-64 object-fit"/>
+            <img src="public/jobseeker-14460b31.png" alt="First Image" class="h-80 w-64 object-fit"/>
         </div>
         <div class="w-full md:w-1/2 flex flex-col items-start justify-center p-6 ml-36">
         <h2 class="text-5xl text-sky-700 font-bold">You are all set to find
@@ -242,7 +242,7 @@ function App() {
         
 
         <div class="w-full md:w-1/2 flex justify-center">
-            <img src="src/assets/jobseeker-14460b31.png" alt="Second Image" class="h-80 w-64 object-fit"/>
+            <img src="public/jobseeker-14460b31.png" alt="Second Image" class="h-80 w-64 object-fit"/>
         </div>
         <div class="w-full md:w-1/2 flex flex-col items-start justify-center p-6">
             <h2 class="text-5xl text-white font-bold">Get shortlisted candidates
@@ -284,14 +284,14 @@ function App() {
           </div>
           {/* QR Code */}
           <div className="flex items-center space-x-4">
-            <img src='src/assets/download.png' alt="QR Code" className="w-24 h-24" />
+            <img src='public/download.png' alt="QR Code" className="w-24 h-24" />
           </div>
         </div>
 
         {/* Right Side - Mobile Image */}
         <div className="lg:w-1/2 mt-10 lg:mt-0">
           <img
-            src="src/assets/downloadhand-78c6f78a.png"
+            src="public/downloadhand-78c6f78a.png"
             alt="Mobile App"
             className=" object-cover w-full h-96 -mb-16"
           />
