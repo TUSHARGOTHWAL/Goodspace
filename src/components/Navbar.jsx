@@ -91,9 +91,14 @@ const Navbar = () => {
           <Link to="/login" className="px-4 py-2 rounded-md bg-white text-blue-400 border-2 border-blue-300 font-normal text-sm">
             Login/Signup
           </Link>
-          <Link to="/job-seeker" className="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-300">
-            Looking for a job?
-          </Link>
+          <Link
+  to="https://goodspace.ai/job-seeker"
+  className="px-4 py-2 rounded-md bg-sky-600 text-white relative overflow-hidden group"
+>
+  <span className="relative z-10">Looking for a job?</span>
+  <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transform -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out -skew-x-12"></span>
+</Link>
+
         </div>
         <div className="md:hidden">
           <button

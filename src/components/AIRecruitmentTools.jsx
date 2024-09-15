@@ -71,10 +71,11 @@ const AIRecruitmentTools = () => {
               <div key={tool.id}>
                 <h2 className="text-6xl font-bold text-sky-600 mb-4">{tool.title}</h2>
                 <p className="text-gray-700 mb-4">{tool.description}</p>
-                <button className="bg-sky-600 text-white px-6 py-5 font-bold rounded-md flex items-center">
-                  Start hiring
-                  <ChevronRight className="ml-2" size={20} />
-                </button>
+                <button className="bg-sky-600 text-white font-bold py-5 px-6 relative overflow-hidden group">
+  <span className="relative z-10">Start Hiring</span>
+  <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transform -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out -skew-x-12"></span>
+</button>
+
               </div>
             ) : null
           )}
